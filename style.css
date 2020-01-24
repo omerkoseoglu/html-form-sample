@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: royalblue;
+    color: #ffffff !important;
+}
+
+.ikinci {
+    font-size: 50px !important;
+}
+
+
+div > h1 {
+    font-size: 100px;
+}
+
+
+select {
+    font-size: 20px !important;
+    color: white;
+    background-color: black;
+}
+
+p, select {
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+}
+

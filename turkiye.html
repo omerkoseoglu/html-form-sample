@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Ülkeler</title>
+    <link rel="stylesheet" href="style.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
         $("select[name=country]").on("change", function(e) {
-
-
 
           if ($(this).val() == "turkiye") {
             window.location.assign("turkiye.html");
@@ -34,8 +33,10 @@
   </head>
   <body>
     <div>
-      <p>Ülke seçiniz</p>
+      <h1 class="ikinci">Ülke seçiniz</h1>
+      <h1>Ülke seçiniz</h1>
     </div>
+    <h1>Ülke seçiniz</h1>
     <div>
       <select name="country">
         <option value="-1">Ülke seçiniz</option>
