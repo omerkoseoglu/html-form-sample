@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ülkeler</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("select[name=country]").on("change", function(e) {
+
+
+
+          if ($(this).val() == "turkiye") {
+            window.location.assign("turkiye.html");
+          }
+
+          if ($(this).val() == "almanya") {
+            window.location.assign("almanya.html");
+          }
+
+          if ($(this).val() == "ingiltere") {
+            window.location.assign("ingiltere.html");
+          }
+
+          if ($(this).val() == "-1") {
+            window.location.assign("index.html");
+          }
+
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div>
+      <p>Ülke seçiniz</p>
+    </div>
+    <div>
+      <select name="country">
+        <option value="-1">Ülke seçiniz</option>
+        <option value="turkiye">Türkiye</option>
+        <option value="almanya">Almanya</option>
+        <option value="ingiltere" selected="true">İngiltere</option>
+      </select>
+    </div>
+    <div>
+      <ul>
+        <li>Londra</li>
+        <li>Manchester</li>
+      </ul>
+    </div>
+  </body>
+</html>
